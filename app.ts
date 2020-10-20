@@ -6,7 +6,7 @@ function add(num1: number, num2: number, showResult: boolean, phrase: string){
   if(showResult){
     console.log(`${phrase}${result}`)
   } else {
-    return num1 + num2;
+    return result;
   }
 }
 
