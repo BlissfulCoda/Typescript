@@ -2,8 +2,9 @@
 //Numbers, Strings, Booleans
 
 function add(num1: number, num2: number, showResult: boolean, phrase: string){
+  let result = num1 + num2;
   if(showResult){
-    console.log(phrase + +num1 + +num2);
+    console.log(`${phrase}${result}`)
   } else {
     return num1 + num2;
   }

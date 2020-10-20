@@ -1,8 +1,9 @@
 //Core Types
 //Numbers, Strings, Booleans
 function add(num1, num2, showResult, phrase) {
+    var result = num1 + num2;
     if (showResult) {
-        console.log(phrase + +num1 + +num2);
+        console.log(phrase + " " + result);
     }
     else {
         return num1 + num2;
