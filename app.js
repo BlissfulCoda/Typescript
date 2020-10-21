@@ -1,16 +1,13 @@
-//Core Types
-//Numbers, Strings, Booleans
-function add(num1, num2, showResult, phrase) {
-    var result = num1 + num2;
-    if (showResult) {
-        console.log(phrase + " " + result);
+//Union Types
+function combine(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        return "" + (input1 + input2);
     }
     else {
-        return num1 + num2;
+        return "" + (String(input1) + String(input2));
     }
+    return result;
 }
-var number1 = 3;
-var number2 = 12;
-var printResult = true;
-var resultPhrase = "Result is: ";
-add(number1, number2, printResult, resultPhrase);
+var combineAges = combine(3, 34);
+console.log(combineAges);
